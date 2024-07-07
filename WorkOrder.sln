@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorkOrder.Domain", "WorkOrd
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorkOrder.Infrastructure", "WorkOrder.Infrastructure\WorkOrder.Infrastructure.csproj", "{77356815-3887-4BC9-BFEA-A9FDE6BD9D82}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkOrder.Tests", "WorkOrder.Tests\WorkOrder.Tests.csproj", "{FE890335-3680-4ADB-A493-379E8668A73E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorkOrder.Tests", "WorkOrder.Tests\WorkOrder.Tests.csproj", "{FE890335-3680-4ADB-A493-379E8668A73E}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{E685878E-9E0F-4CB8-AC52-5E00635A3BA0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{FE890335-3680-4ADB-A493-379E8668A73E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FE890335-3680-4ADB-A493-379E8668A73E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FE890335-3680-4ADB-A493-379E8668A73E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E685878E-9E0F-4CB8-AC52-5E00635A3BA0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E685878E-9E0F-4CB8-AC52-5E00635A3BA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E685878E-9E0F-4CB8-AC52-5E00635A3BA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E685878E-9E0F-4CB8-AC52-5E00635A3BA0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

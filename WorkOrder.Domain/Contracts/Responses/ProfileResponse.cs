@@ -2,5 +2,5 @@
 
 public class ProfileResponse : BaseResponse
 {
-    public string Nome { get; set; }
+    public string Name { get; set; }
 }

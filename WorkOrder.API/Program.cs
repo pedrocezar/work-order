@@ -14,7 +14,6 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using System.Text;
-using AutoMapper;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddEndpointsApiExplorer();
@@ -142,6 +141,11 @@ builder.Services.AddAuthorization(options =>
 #region AppConfiguration
 
 var app = builder.Build();
+using (var scope = app.Services.CreateScope())
+{
+    var db = scope.ServiceProvider.GetRequiredService<WorkOrderContext>();
+    db.Database.Migrate();
+}
 app.UseSwagger();
 app.UseSwaggerUI();
 app.UseAuthentication();

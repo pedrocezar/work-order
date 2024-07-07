@@ -39,11 +39,11 @@ public class UsersController : BaseController<UserModel, UserRequest, UserRespon
         return Ok();
     }
 
-    [HttpGet("nome")]
+    [HttpGet("name")]
     [ProducesResponseType(200)]
-    protected async Task<ActionResult<List<UserResponse>>> GetAsync([FromQuery] string nome)
+    protected async Task<ActionResult<List<UserResponse>>> GetAsync([FromQuery] string name)
     {
-        var models = await _service.GetAllAsync(x => x.Name.Contains(nome));
+        var models = await _service.GetAllAsync(x => x.Name.Contains(name));
         var response = _mapper.Map<List<UserResponse>>(models);
         return Ok(response);
     }

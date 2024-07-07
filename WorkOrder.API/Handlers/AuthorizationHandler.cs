@@ -30,7 +30,7 @@ namespace WorkOrder.API.Handlers
                     informacaoResponse = new InformationResponse
                     {
                         Status = StatusException.ProhibitedAccess,
-                        Messages = new List<string> { "Acesso não permitido" }
+                        Messages = new List<string> { "Access not permitted" }
                     };
                 }
                 else
@@ -39,7 +39,7 @@ namespace WorkOrder.API.Handlers
                     informacaoResponse = new InformationResponse
                     {
                         Status = StatusException.NotAuthorized,
-                        Messages = new List<string> { "Acesso negado" }
+                        Messages = new List<string> { "Access denied" }
                     };
                 }
 
